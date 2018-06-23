@@ -1,0 +1,25 @@
+{
+  "name": "rtmidi",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "node .",
+    "install": "node-gyp rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shawwn/rtmidi"
+  },
+  "author": "Shawn Presser <shawnpresser@gmail.com>",
+  "license": "MIT",
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/shawwn/rtmidi/issues"
+  },
+  "homepage": "https://github.com/shawwn/rtmidi#readme",
+  "dependencies": {
+    "nan": "^2.10.0"
+  }
+}
