@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node .",
-    "test": "node test.js",
-    "test-debug": "node-gyp build --debug && cross-env RTMIDI_DEBUG=1 node test.js",
+    "test": "npm run build && node test.js",
+    "test-debug": "npm run build-debug && cross-env RTMIDI_DEBUG=1 node test.js",
+    "build": "node-gyp build",
+    "build-debug": "node-gyp build --debug",
     "install": "node-gyp rebuild"
   },
   "repository": {
