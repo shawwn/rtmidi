@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node .",
     "test": "node test.js",
+    "test-debug": "node-gyp build --debug && cross-env RTMIDI_DEBUG=1 node test.js",
     "install": "node-gyp rebuild"
   },
   "repository": {
@@ -21,5 +22,8 @@
   "homepage": "https://github.com/shawwn/rtmidi#readme",
   "dependencies": {
     "nan": "^2.10.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
   }
 }
